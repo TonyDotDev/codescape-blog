@@ -1,0 +1,26 @@
+a {
+  box-shadow: none;
+  color: #32c4f2;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+body {
+  color: #677077;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}

@@ -1,0 +1,43 @@
+.svg-menu-button-icon .rect-top,
+.svg-menu-button-icon .rect-bot {
+  transform-origin: center;
+  /* transform: rotate(0);
+  transition: all 100ms cubic-bezier(0.39, 0.575, 0.565, 1); */
+}
+
+.svg-menu-button-icon.menu-open {
+  opacity: 0;
+  visibility: hidden;
+}
+/* 
+.svg-menu-button-icon.menu-open .rect-top {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+.svg-menu-button-icon.menu-open .rect-bot {
+  transform: rotate(-45deg) translate(-2px, -5px);
+} */
+
+.global-header button:hover .svg-menu-button-icon.menu-open .rect-top,
+.global-header button:hover .svg-menu-button-icon.menu-open .rect-bot {
+  animation: none;
+}
+
+.global-header button:hover .rect-top {
+  animation: stretch 200ms cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+.global-header button:hover .rect-bot {
+  animation: stretch 200ms 80ms cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.75);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,30 @@
+.page {
+  padding-left: calc(100vw - 100%);
+}
+
+.global-header {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  margin-bottom: 100px;
+}
+
+.global-header .logo {
+  margin-right: auto;
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.global-header .contact-link {
+  position: relative;
+  top: 5px;
+}
+
+.global-header button {
+  margin-left: 40px;
+}
+
+.global-footer {
+  margin-top: 100px;
+}

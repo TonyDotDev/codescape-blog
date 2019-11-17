@@ -1,0 +1,25 @@
+.article-preview .title a {
+  color: #3f3d56;
+  font-size: 26px;
+}
+
+.article-preview .subtitle {
+  color: #677077;
+  margin-bottom: 0;
+}
+
+.article-preview small {
+  color: #677077;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.article-preview .tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5x;
+}
+
+.article-preview .tags a:not(:last-child) {
+  margin-right: 5px;
+}

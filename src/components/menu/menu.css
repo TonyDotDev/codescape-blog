@@ -1,0 +1,73 @@
+.nav-menu {
+  background-color: rgba(63, 61, 86, 0.96);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding-left: calc(100vw - 100%);
+  transition: all 200ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.page.menu-open .nav-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu .layout {
+  max-width: 42rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.nav-menu nav ul li {
+  margin: 30px 0;
+}
+
+.nav-menu nav ul li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", "Georgia", serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.nav-menu .layout button {
+  align-self: flex-end;
+  position: relative;
+  top: 47px;
+  right: 22px;
+}
+
+.nav-menu .layout button img {
+  transform-origin: center;
+  transform: translateY(-30px) rotate(-90deg);
+  opacity: 0;
+  transition: all 200ms 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.page.menu-open .nav-menu .layout button img {
+  transform: translateY(0) rotate(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 450px) {
+  .nav-menu nav ul li a {
+    font-size: 26px;
+  }
+}

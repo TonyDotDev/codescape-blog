@@ -1,0 +1,35 @@
+.blog-post h1,
+h2,
+p {
+  color: #3f3d56;
+}
+
+.blog-post .subtitle {
+  font-size: 20px;
+}
+
+.blog-post .info-container {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.blog-post .info-container img {
+  height: 20px;
+  width: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+@media all and (min-width: 500px) {
+  .blog-post .info-container {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 5px;
+  }
+
+  .blog-post .info-container img:last-of-type {
+    margin-left: 20px;
+  }
+}
